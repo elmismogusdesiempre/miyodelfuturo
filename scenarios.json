@@ -16,406 +16,455 @@
 
   "scenarios": [
 
-    {
-      "id": 1,
-      "category": "food",
-      "rarity": "common",
-      "weight": 5,
-      "emoji": "🍔",
-      "title": "Hamburguesas de descanso",
-      "text": "Compraste hamburguesas durante toda la semana escolar.",
-      "options": [
-        {
-          "label": "Comprar todos los días",
-          "effects": {
-            "money": -85000,
-            "impulse": 3,
-            "emotionalSpending": 2
-          }
-        },
-        {
-          "label": "Comprar solo 2 días",
-          "effects": {
-            "money": -32000,
-            "impulse": 1
-          }
-        },
-        {
-          "label": "Llevar comida desde casa",
-          "effects": {
-            "money": 0,
-            "discipline": 2,
-            "planning": 2
-          }
-        },
-        {
-          "label": "Tomar agua y ahorrar",
-          "effects": {
-            "money": 0,
-            "futureVision": 3
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 2,
-      "category": "gaming",
-      "rarity": "common",
-      "weight": 4,
-      "emoji": "🎮",
-      "title": "Skin legendaria",
-      "text": "Apareció una skin exclusiva por tiempo limitado.",
-      "options": [
-        {
-          "label": "Comprar el paquete premium",
-          "effects": {
-            "money": -65000,
-            "impulse": 4
-          }
-        },
-        {
-          "label": "Comprar solo la skin básica",
-          "effects": {
-            "money": -25000,
-            "impulse": 1
-          }
-        },
-        {
-          "label": "Ignorar la oferta",
-          "effects": {
-            "money": 0,
-            "discipline": 2
-          }
-        },
-        {
-          "label": "Ahorrar para algo real",
-          "effects": {
-            "money": 0,
-            "futureVision": 3
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 3,
-      "category": "transport",
-      "rarity": "common",
-      "weight": 5,
-      "emoji": "🚌",
-      "title": "Buses evitables",
-      "text": "Podías quedarte estudiando y evitar varios trayectos.",
-      "options": [
-        {
-          "label": "Tomar todos los buses",
-          "effects": {
-            "money": -28000,
-            "planning": -1
-          }
-        },
-        {
-          "label": "Ahorrar algunos trayectos",
-          "effects": {
-            "money": -12000,
-            "planning": 1
-          }
-        },
-        {
-          "label": "Quedarte estudiando",
-          "effects": {
-            "money": 0,
-            "discipline": 2
-          }
-        },
-        {
-          "label": "Guardar el ahorro",
-          "effects": {
-            "money": 0,
-            "futureVision": 2
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 4,
-      "category": "delivery",
-      "rarity": "common",
-      "weight": 5,
-      "emoji": "🛵",
-      "title": "Domicilios nocturnos",
-      "text": "Pediste comida varias noches aunque había comida en casa.",
-      "options": [
-        {
-          "label": "Pedir combos grandes",
-          "effects": {
-            "money": -95000,
-            "emotionalSpending": 4
-          }
-        },
-        {
-          "label": "Pedir algo pequeño",
-          "effects": {
-            "money": -35000,
-            "impulse": 1
-          }
-        },
-        {
-          "label": "Comer en casa",
-          "effects": {
-            "money": 0,
-            "discipline": 2,
-            "planning": 2
-          }
-        },
-        {
-          "label": "Guardar ese dinero",
-          "effects": {
-            "money": 0,
-            "futureVision": 3
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 5,
-      "category": "streaming",
-      "rarity": "common",
-      "weight": 4,
-      "emoji": "🎧",
-      "title": "Suscripciones olvidadas",
-      "text": "Pagaste plataformas que casi no usaste este mes.",
-      "options": [
-        {
-          "label": "Mantener todas",
-          "effects": {
-            "money": -58000,
-            "discipline": -2
-          }
-        },
-        {
-          "label": "Cancelar solo una",
-          "effects": {
-            "money": -18000
-          }
-        },
-        {
-          "label": "Compartir cuentas",
-          "effects": {
-            "money": 0,
-            "planning": 2
-          }
-        },
-        {
-          "label": "Cancelar todo",
-          "effects": {
-            "money": 0,
-            "futureVision": 3
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 6,
-      "category": "social",
-      "rarity": "common",
-      "weight": 5,
-      "emoji": "🧋",
-      "title": "Bubble tea diario",
-      "text": "Tus amigos estuvieron saliendo por bebidas costosas.",
-      "options": [
-        {
-          "label": "Comprar siempre",
-          "effects": {
-            "money": -72000,
-            "socialPressure": 4
-          }
-        },
-        {
-          "label": "Comprar algunos días",
-          "effects": {
-            "money": -28000,
-            "socialPressure": 1
-          }
-        },
-        {
-          "label": "No comprar",
-          "effects": {
-            "money": 0,
-            "discipline": 2
-          }
-        },
-        {
-          "label": "Guardar el dinero",
-          "effects": {
-            "money": 0,
-            "futureVision": 3
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 7,
-      "category": "coffee",
-      "rarity": "common",
-      "weight": 5,
-      "emoji": "☕",
-      "title": "Café mañanero",
-      "text": "Compraste café antes de clases toda la semana.",
-      "options": [
-        {
-          "label": "Comprar café premium",
-          "effects": {
-            "money": -42000,
-            "impulse": 2
-          }
-        },
-        {
-          "label": "Comprar café barato",
-          "effects": {
-            "money": -18000
-          }
-        },
-        {
-          "label": "Llevar termo",
-          "effects": {
-            "money": 0,
-            "planning": 2
-          }
-        },
-        {
-          "label": "Ahorrar ese dinero",
-          "effects": {
-            "money": 0,
-            "futureVision": 2
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 8,
-      "category": "shopping",
-      "rarity": "rare",
-      "weight": 2,
-      "emoji": "📦",
-      "title": "Compras impulsivas",
-      "text": "Caíste en ofertas relámpago durante la semana.",
-      "options": [
-        {
-          "label": "Comprar varias cosas",
-          "effects": {
-            "money": -110000,
-            "impulse": 5
-          }
-        },
-        {
-          "label": "Comprar solo una cosa",
-          "effects": {
-            "money": -35000,
-            "impulse": 2
-          }
-        },
-        {
-          "label": "Cerrar la app",
-          "effects": {
-            "money": 0,
-            "discipline": 2
-          }
-        },
-        {
-          "label": "Guardar el dinero",
-          "effects": {
-            "money": 0,
-            "futureVision": 4
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 9,
-      "category": "fashion",
-      "rarity": "common",
-      "weight": 4,
-      "emoji": "👟",
-      "title": "Tenis virales",
-      "text": "Todos tus amigos tienen los tenis de moda.",
-      "options": [
-        {
-          "label": "Comprarlos ya",
-          "effects": {
-            "money": -260000,
-            "socialPressure": 5
-          }
-        },
-        {
-          "label": "Comprar réplica barata",
-          "effects": {
-            "money": -90000,
-            "socialPressure": 2
-          }
-        },
-        {
-          "label": "Esperar rebaja",
-          "effects": {
-            "money": 0,
-            "discipline": 2
-          }
-        },
-        {
-          "label": "No comprarlos",
-          "effects": {
-            "money": 0,
-            "futureVision": 3,
-            "discipline": 3
-          }
-        }
-      ]
-    },
-
-    {
-      "id": 10,
-      "category": "cinema",
-      "rarity": "common",
-      "weight": 4,
-      "emoji": "🍿",
-      "title": "Combo cine",
-      "text": "Gastaste más en snacks que en la película.",
-      "options": [
-        {
-          "label": "Combo gigante",
-          "effects": {
-            "money": -55000,
-            "impulse": 2
-          }
-        },
-        {
-          "label": "Snack pequeño",
-          "effects": {
-            "money": -18000
-          }
-        },
-        {
-          "label": "No comprar snacks",
-          "effects": {
-            "money": 0,
-            "discipline": 2
-          }
-        },
-        {
-          "label": "Guardar el dinero",
-          "effects": {
-            "money": 0,
-            "futureVision": 2
-          }
-        }
-      ]
-    }
-
-  ]
-}
+[
+  {
+    "id": 1,
+    "category": "food",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🍔",
+    "title": "Hamburguesas de descanso",
+    "text": "Compraste hamburguesas durante toda la semana escolar.",
+    "options": [
+      { "label": "Comprar todos los días", "effects": { "money": -85000, "impulse": 3, "emotionalSpending": 2 } },
+      { "label": "Comprar solo 2 días", "effects": { "money": -32000, "impulse": 1 } },
+      { "label": "Llevar comida desde casa", "effects": { "money": 0, "discipline": 2, "planning": 2 } },
+      { "label": "Tomar agua y ahorrar", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "gaming",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🎮",
+    "title": "Skin legendaria",
+    "text": "Apareció una skin exclusiva por tiempo limitado.",
+    "options": [
+      { "label": "Comprar el paquete premium", "effects": { "money": -65000, "impulse": 4 } },
+      { "label": "Comprar solo la skin básica", "effects": { "money": -25000, "impulse": 1 } },
+      { "label": "Ignorar la oferta", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Ahorrar para algo real", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "transport",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🚌",
+    "title": "Buses evitables",
+    "text": "Podías quedarte estudiando y evitar varios trayectos.",
+    "options": [
+      { "label": "Tomar todos los buses", "effects": { "money": -28000, "planning": -1 } },
+      { "label": "Ahorrar algunos trayectos", "effects": { "money": -12000, "planning": 1 } },
+      { "label": "Quedarte estudiando", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Guardar el ahorro", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "delivery",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🛵",
+    "title": "Domicilios nocturnos",
+    "text": "Pediste comida varias noches aunque había comida en casa.",
+    "options": [
+      { "label": "Pedir combos grandes", "effects": { "money": -95000, "emotionalSpending": 4 } },
+      { "label": "Pedir algo pequeño", "effects": { "money": -35000, "impulse": 1 } },
+      { "label": "Comer en casa", "effects": { "money": 0, "discipline": 2, "planning": 2 } },
+      { "label": "Guardar ese dinero", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "streaming",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🎧",
+    "title": "Suscripciones olvidadas",
+    "text": "Pagaste plataformas que casi no usaste este mes.",
+    "options": [
+      { "label": "Mantener todas", "effects": { "money": -58000, "discipline": -2 } },
+      { "label": "Cancelar solo una", "effects": { "money": -18000 } },
+      { "label": "Compartir cuentas", "effects": { "money": 0, "planning": 2 } },
+      { "label": "Cancelar todo", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "social",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🧋",
+    "title": "Bubble tea diario",
+    "text": "Tus amigos estuvieron saliendo por bebidas costosas.",
+    "options": [
+      { "label": "Comprar siempre", "effects": { "money": -72000, "socialPressure": 4 } },
+      { "label": "Comprar algunos días", "effects": { "money": -28000, "socialPressure": 1 } },
+      { "label": "No comprar", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Guardar el dinero", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "coffee",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "☕",
+    "title": "Café mañanero",
+    "text": "Compraste café antes de clases toda la semana.",
+    "options": [
+      { "label": "Comprar café premium", "effects": { "money": -42000, "impulse": 2 } },
+      { "label": "Comprar café barato", "effects": { "money": -18000 } },
+      { "label": "Llevar termo", "effects": { "money": 0, "planning": 2 } },
+      { "label": "Ahorrar ese dinero", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "shopping",
+    "rarity": "rare",
+    "weight": 2,
+    "emoji": "📦",
+    "title": "Compras impulsivas",
+    "text": "Caíste en ofertas relámpago durante la semana.",
+    "options": [
+      { "label": "Comprar varias cosas", "effects": { "money": -110000, "impulse": 5 } },
+      { "label": "Comprar solo una cosa", "effects": { "money": -35000, "impulse": 2 } },
+      { "label": "Cerrar la app", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Guardar el dinero", "effects": { "money": 0, "futureVision": 4 } }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "fashion",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "👟",
+    "title": "Tenis virales",
+    "text": "Todos tus amigos tienen los tenis de moda.",
+    "options": [
+      { "label": "Comprarlos ya", "effects": { "money": -260000, "socialPressure": 5 } },
+      { "label": "Comprar réplica barata", "effects": { "money": -90000, "socialPressure": 2 } },
+      { "label": "Esperar rebaja", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "No comprarlos", "effects": { "money": 0, "futureVision": 3, "discipline": 3 } }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "cinema",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🍿",
+    "title": "Combo cine",
+    "text": "Gastaste más en snacks que en la película.",
+    "options": [
+      { "label": "Combo gigante", "effects": { "money": -55000, "impulse": 2 } },
+      { "label": "Snack pequeño", "effects": { "money": -18000 } },
+      { "label": "No comprar snacks", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Guardar el dinero", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "food",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🍕",
+    "title": "Pizza del viernes",
+    "text": "Es viernes y quieres pedir pizza con amigos.",
+    "options": [
+      { "label": "Pedir pizza grande + gaseosa", "effects": { "money": -65000, "socialPressure": 3 } },
+      { "label": "Pedir una mediana", "effects": { "money": -38000, "impulse": 2 } },
+      { "label": "Hacer pizza en casa", "effects": { "money": 0, "planning": 3 } },
+      { "label": "Ahorrar y salir a caminar", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "gaming",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🎮",
+    "title": "Battle Pass nuevo",
+    "text": "Lanzaron el nuevo Battle Pass de tu juego favorito.",
+    "options": [
+      { "label": "Comprar el pase completo", "effects": { "money": -95000, "impulse": 4 } },
+      { "label": "Comprar solo niveles", "effects": { "money": -45000, "impulse": 2 } },
+      { "label": "Jugar gratis", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Ahorrar para PC nueva", "effects": { "money": 0, "futureVision": 4 } }
+    ]
+  },
+  {
+    "id": 13,
+    "category": "transport",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🚲",
+    "title": "Ruta al colegio",
+    "text": "Puedes ir en bus o en bicicleta al colegio.",
+    "options": [
+      { "label": "Tomar bus todos los días", "effects": { "money": -45000, "planning": -1 } },
+      { "label": "Combinar bus y bici", "effects": { "money": -22000, "planning": 1 } },
+      { "label": "Ir siempre en bicicleta", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "Ahorrar el pasaje", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "delivery",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🍔",
+    "title": "Antojo de medianoche",
+    "text": "Tuviste hambre a las 11pm y abriste Rappi.",
+    "options": [
+      { "label": "Pedir hamburguesa + papas", "effects": { "money": -52000, "emotionalSpending": 4 } },
+      { "label": "Pedir solo papas", "effects": { "money": -18000, "impulse": 2 } },
+      { "label": "Comer lo que hay en la nevera", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "Beber agua y dormir", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 15,
+    "category": "streaming",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "📺",
+    "title": "Serie nueva en Netflix",
+    "text": "Sacaron la temporada 3 de tu serie favorita.",
+    "options": [
+      { "label": "Pagar Netflix individual", "effects": { "money": -48000, "discipline": -1 } },
+      { "label": "Compartir con 2 amigos", "effects": { "money": -16000, "planning": 1 } },
+      { "label": "Esperar que alguien te invite", "effects": { "money": 0, "socialPressure": 1 } },
+      { "label": "Cancelar y ahorrar", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 16,
+    "category": "social",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🎉",
+    "title": "Salida de fin de semana",
+    "text": "Tus amigos te invitaron a un centro comercial.",
+    "options": [
+      { "label": "Gastar en todo", "effects": { "money": -135000, "socialPressure": 5 } },
+      { "label": "Gastar moderadamente", "effects": { "money": -65000, "socialPressure": 2 } },
+      { "label": "Solo acompañar sin comprar", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Proponer plan gratis", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "fashion",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🧥",
+    "title": "Chaqueta nueva",
+    "text": "Viste una chaqueta que te encantó en Instagram.",
+    "options": [
+      { "label": "Comprarla de inmediato", "effects": { "money": -180000, "impulse": 4 } },
+      { "label": "Comprar una similar barata", "effects": { "money": -75000, "impulse": 2 } },
+      { "label": "Esperar el próximo mes", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "No comprarla", "effects": { "money": 0, "futureVision": 4 } }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "tech",
+    "rarity": "rare",
+    "weight": 3,
+    "emoji": "📱",
+    "title": "Nuevo iPhone",
+    "text": "Lanzaron el nuevo modelo de celular.",
+    "options": [
+      { "label": "Comprar el último modelo", "effects": { "money": -4500000, "impulse": 5 } },
+      { "label": "Cambiar por uno bueno", "effects": { "money": -1200000, "impulse": 3 } },
+      { "label": "Mantener el actual", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "Ahorrar para algo más útil", "effects": { "money": 0, "futureVision": 5 } }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "school",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "📚",
+    "title": "Útiles escolares",
+    "text": "Necesitas cuadernos y marcadores nuevos.",
+    "options": [
+      { "label": "Comprar marca premium", "effects": { "money": -85000, "impulse": 2 } },
+      { "label": "Comprar lo básico", "effects": { "money": -35000 } },
+      { "label": "Usar lo que tienes", "effects": { "money": 0, "planning": 2 } },
+      { "label": "Pedir prestado", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "music",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🎵",
+    "title": "Concierto favorito",
+    "text": "Viene tu artista favorito a la ciudad.",
+    "options": [
+      { "label": "Comprar boleta VIP", "effects": { "money": -280000, "impulse": 4 } },
+      { "label": "Boleta general", "effects": { "money": -120000, "impulse": 2 } },
+      { "label": "Ver transmisiones", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Ahorrar para el futuro", "effects": { "money": 0, "futureVision": 4 } }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "food",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🌮",
+    "title": "Tacos después de clase",
+    "text": "Saliste de clase con mucha hambre.",
+    "options": [
+      { "label": "Comprar 6 tacos + bebida", "effects": { "money": -42000, "impulse": 3 } },
+      { "label": "Comprar 3 tacos", "effects": { "money": -18000 } },
+      { "label": "Esperar a llegar a casa", "effects": { "money": 0, "discipline": 2 } },
+      { "label": "Ahorrar", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "gaming",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🕹️",
+    "title": "Consola nueva",
+    "text": "Quieres la nueva Nintendo Switch 2.",
+    "options": [
+      { "label": "Comprarla ya", "effects": { "money": -1850000, "impulse": 5 } },
+      { "label": "Comprar usada", "effects": { "money": -850000, "impulse": 2 } },
+      { "label": "Esperar bajar de precio", "effects": { "money": 0, "planning": 3 } },
+      { "label": "No comprar", "effects": { "money": 0, "futureVision": 4 } }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "transport",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🚕",
+    "title": "Taxi o Transmilenio",
+    "text": "Llegas tarde y piensas tomar taxi.",
+    "options": [
+      { "label": "Tomar taxi", "effects": { "money": -35000, "planning": -2 } },
+      { "label": "Tomar bus rápido", "effects": { "money": -8000 } },
+      { "label": "Salir más temprano", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "Ahorrar", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "delivery",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🍦",
+    "title": "Helado a domicilio",
+    "text": "Hace calor y quieres helado.",
+    "options": [
+      { "label": "Pedir pote grande", "effects": { "money": -38000, "emotionalSpending": 3 } },
+      { "label": "Pedir uno pequeño", "effects": { "money": -15000 } },
+      { "label": "Hacer en casa", "effects": { "money": 0, "planning": 2 } },
+      { "label": "Tomar agua fría", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 25,
+    "category": "shopping",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🛍️",
+    "title": "Shein o Temu",
+    "text": "Llegó tu paquete de Shein con muchas cosas.",
+    "options": [
+      { "label": "Comprar todo lo que te gusta", "effects": { "money": -165000, "impulse": 5 } },
+      { "label": "Comprar solo 2 prendas", "effects": { "money": -65000, "impulse": 2 } },
+      { "label": "Devolver la mayoría", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "No abrir la app", "effects": { "money": 0, "futureVision": 4 } }
+    ]
+  },
+  {
+    "id": 26,
+    "category": "social",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🍔",
+    "title": "Salida con la crush",
+    "text": "Te invitaron a salir con alguien que te gusta.",
+    "options": [
+      { "label": "Pagar todo", "effects": { "money": -95000, "socialPressure": 4 } },
+      { "label": "Pagar la mitad", "effects": { "money": -45000 } },
+      { "label": "Ir a un plan gratis", "effects": { "money": 0, "planning": 2 } },
+      { "label": "Proponer plan económico", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 27,
+    "category": "coffee",
+    "rarity": "common",
+    "weight": 5,
+    "emoji": "🥤",
+    "title": "Bebida energizante",
+    "text": "Tienes examen y quieres comprar Red Bull.",
+    "options": [
+      { "label": "Comprar varias latas", "effects": { "money": -32000, "impulse": 3 } },
+      { "label": "Comprar una", "effects": { "money": -9000 } },
+      { "label": "Dormir más temprano", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "Ahorrar", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "fashion",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "👕",
+    "title": "Ropa para la fiesta",
+    "text": "Hay una fiesta importante este sábado.",
+    "options": [
+      { "label": "Comprar outfit completo", "effects": { "money": -220000, "socialPressure": 4 } },
+      { "label": "Comprar solo una prenda", "effects": { "money": -85000 } },
+      { "label": "Usar lo que tienes", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "No ir a la fiesta", "effects": { "money": 0, "futureVision": 2 } }
+    ]
+  },
+  {
+    "id": 29,
+    "category": "cinema",
+    "rarity": "common",
+    "weight": 4,
+    "emoji": "🎥",
+    "title": "Estreno de Marvel",
+    "text": "Estrenó la nueva película de superhéroes.",
+    "options": [
+      { "label": "Ir al cine en 4D", "effects": { "money": -85000, "impulse": 3 } },
+      { "label": "Ir en 2D normal", "effects": { "money": -45000 } },
+      { "label": "Esperar a que salga online", "effects": { "money": 0, "planning": 2 } },
+      { "label": "Ahorrar", "effects": { "money": 0, "futureVision": 3 } }
+    ]
+  },
+  {
+    "id": 30,
+    "category": "tech",
+    "rarity": "rare",
+    "weight": 2,
+    "emoji": "🎧",
+    "title": "AirPods nuevos",
+    "text": "Se te perdieron los audífonos.",
+    "options": [
+      { "label": "Comprar AirPods Pro", "effects": { "money": -750000, "impulse": 5 } },
+      { "label": "Comprar genéricos buenos", "effects": { "money": -180000, "impulse": 2 } },
+      { "label": "Usar audífonos del celular", "effects": { "money": 0, "discipline": 3 } },
+      { "label": "Ahorrar para mejor inversión", "effects": { "money": 0, "futureVision": 4 } }
+    ]
+  }
+]
