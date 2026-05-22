@@ -1,0 +1,608 @@
+{
+  "game": {
+    "title": "Tu Yo del Futuro",
+    "version": "1.0",
+    "description": "Juego educativo financiero para adolescentes basado en microdecisiones y gastos hormiga."
+  },
+  "attributes": [
+    "impulse",
+    "discipline",
+    "futureVision",
+    "socialPressure",
+    "emotionalSpending",
+    "planning"
+  ],
+  "scenarios": [
+    {
+      "id": 1,
+      "category": "snacks",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🍔",
+      "title": "Snacks diarios",
+      "text": "Compraste comida en todos los descansos.",
+      "options": [
+        {
+          "label": "Comprar siempre",
+          "effects": {
+            "money": -30,
+            "ants": 3,
+            "impulse": 3,
+            "discipline": -2,
+            "futureVision": -1
+          }
+        },
+        {
+          "label": "Llevar comida",
+          "effects": {
+            "money": 20,
+            "ants": -2,
+            "discipline": 3,
+            "planning": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "streaming",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🎧",
+      "title": "Demasiadas suscripciones",
+      "text": "Pagaste apps que casi no usaste.",
+      "options": [
+        {
+          "label": "Pagar todas",
+          "effects": {
+            "money": -40,
+            "ants": 3,
+            "impulse": 2,
+            "discipline": -1,
+            "emotionalSpending": 2
+          }
+        },
+        {
+          "label": "Compartir cuentas",
+          "effects": {
+            "money": 10,
+            "ants": -1,
+            "planning": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "transport",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🚌",
+      "title": "Buses evitables",
+      "text": "Podías quedarte estudiando y ahorrar transporte.",
+      "options": [
+        {
+          "label": "Tomar todos los buses",
+          "effects": {
+            "money": -20,
+            "ants": 2,
+            "planning": -1,
+            "discipline": -1
+          }
+        },
+        {
+          "label": "Quedarme en biblioteca",
+          "effects": {
+            "money": 25,
+            "ants": -2,
+            "planning": 3,
+            "futureVision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "gaming",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "🎮",
+      "title": "Oferta gamer",
+      "text": "Había descuento en un juego que no necesitabas.",
+      "options": [
+        {
+          "label": "Comprar ya",
+          "effects": {
+            "money": -45,
+            "ants": 3,
+            "impulse": 3,
+            "emotionalSpending": 2
+          }
+        },
+        {
+          "label": "Esperar",
+          "effects": {
+            "money": 15,
+            "ants": -1,
+            "discipline": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "delivery",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🛵",
+      "title": "Domicilio innecesario",
+      "text": "Había comida en casa, pero pediste domicilio.",
+      "options": [
+        {
+          "label": "Pedir varias veces",
+          "effects": {
+            "money": -50,
+            "ants": 4,
+            "impulse": 2,
+            "emotionalSpending": 3
+          }
+        },
+        {
+          "label": "Comer en casa",
+          "effects": {
+            "money": 25,
+            "ants": -2,
+            "discipline": 2,
+            "planning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "coffee",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "☕",
+      "title": "Café diario",
+      "text": "Compraste café todos los días antes de clase.",
+      "options": [
+        {
+          "label": "Comprar siempre",
+          "effects": {
+            "money": -25,
+            "ants": 2,
+            "impulse": 2,
+            "discipline": -1
+          }
+        },
+        {
+          "label": "Llevar termo",
+          "effects": {
+            "money": 20,
+            "ants": -2,
+            "planning": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "shopping",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "📦",
+      "title": "Modo Temu",
+      "text": "Compraste cosas baratas que realmente no necesitabas.",
+      "options": [
+        {
+          "label": "Comprar varias",
+          "effects": {
+            "money": -40,
+            "ants": 4,
+            "impulse": 3,
+            "futureVision": -1
+          }
+        },
+        {
+          "label": "Cerrar la app",
+          "effects": {
+            "money": 20,
+            "ants": -2,
+            "discipline": 2,
+            "futureVision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "social",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🧋",
+      "title": "Bubble tea social",
+      "text": "Tus amigos fueron por bebidas caras después de clases.",
+      "options": [
+        {
+          "label": "Comprar combo completo",
+          "effects": {
+            "money": -30,
+            "ants": 2,
+            "socialPressure": 3,
+            "impulse": 2
+          }
+        },
+        {
+          "label": "Llevar agua",
+          "effects": {
+            "money": 15,
+            "ants": -1,
+            "discipline": 1,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "category": "fashion",
+      "rarity": "common",
+      "weight": 3,
+      "emoji": "👟",
+      "title": "Tenis de moda",
+      "text": "Querías comprar unos tenis solo porque todos los tenían.",
+      "options": [
+        {
+          "label": "Comprar por presión",
+          "effects": {
+            "money": -60,
+            "ants": 3,
+            "socialPressure": 4,
+            "impulse": 2
+          }
+        },
+        {
+          "label": "Esperar y pensar",
+          "effects": {
+            "money": 15,
+            "ants": -1,
+            "discipline": 2,
+            "futureVision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "category": "gaming",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "💎",
+      "title": "Skins brillantes",
+      "text": "Apareció una skin limitada en tu juego favorito.",
+      "options": [
+        {
+          "label": "Comprar skin",
+          "effects": {
+            "money": -35,
+            "ants": 3,
+            "emotionalSpending": 3,
+            "impulse": 2
+          }
+        },
+        {
+          "label": "Ignorar",
+          "effects": {
+            "money": 20,
+            "ants": -2,
+            "discipline": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 11,
+      "category": "snacks",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🍟",
+      "title": "Papas todos los días",
+      "text": "Compraste papas fritas diariamente.",
+      "options": [
+        {
+          "label": "Comprar siempre",
+          "effects": {
+            "money": -20,
+            "ants": 2,
+            "impulse": 2,
+            "discipline": -1
+          }
+        },
+        {
+          "label": "Comprar ocasionalmente",
+          "effects": {
+            "money": -5,
+            "ants": 1,
+            "planning": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 12,
+      "category": "social",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "🎉",
+      "title": "Salida improvisada",
+      "text": "Tus amigos organizaron una salida costosa de último momento.",
+      "options": [
+        {
+          "label": "Ir sin pensar",
+          "effects": {
+            "money": -50,
+            "ants": 3,
+            "socialPressure": 3,
+            "impulse": 2
+          }
+        },
+        {
+          "label": "Decir que no",
+          "effects": {
+            "money": 20,
+            "ants": -1,
+            "discipline": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 13,
+      "category": "shopping",
+      "rarity": "rare",
+      "weight": 2,
+      "emoji": "🧢",
+      "title": "Gorra limitada",
+      "text": "Viste una gorra edición especial en internet.",
+      "options": [
+        {
+          "label": "Comprar inmediatamente",
+          "effects": {
+            "money": -45,
+            "ants": 3,
+            "impulse": 3,
+            "emotionalSpending": 2
+          }
+        },
+        {
+          "label": "Pensarlo una semana",
+          "effects": {
+            "money": 15,
+            "ants": -1,
+            "planning": 2,
+            "discipline": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 14,
+      "category": "transport",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "🚶",
+      "title": "Caminar o gastar",
+      "text": "Podías caminar 15 minutos y ahorrar transporte.",
+      "options": [
+        {
+          "label": "Tomar transporte",
+          "effects": {
+            "money": -15,
+            "ants": 1,
+            "discipline": -1
+          }
+        },
+        {
+          "label": "Caminar",
+          "effects": {
+            "money": 20,
+            "ants": -1,
+            "discipline": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 15,
+      "category": "food",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🍕",
+      "title": "Pizza impulsiva",
+      "text": "Pediste pizza solo por antojo nocturno.",
+      "options": [
+        {
+          "label": "Pedir pizza",
+          "effects": {
+            "money": -35,
+            "ants": 3,
+            "emotionalSpending": 3,
+            "impulse": 2
+          }
+        },
+        {
+          "label": "Comer algo en casa",
+          "effects": {
+            "money": 15,
+            "ants": -1,
+            "planning": 1,
+            "discipline": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 16,
+      "category": "streaming",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "📺",
+      "title": "Suscripción olvidada",
+      "text": "Seguiste pagando una plataforma que ni abrías.",
+      "options": [
+        {
+          "label": "Seguir pagando",
+          "effects": {
+            "money": -25,
+            "ants": 2,
+            "discipline": -1,
+            "futureVision": -1
+          }
+        },
+        {
+          "label": "Cancelar",
+          "effects": {
+            "money": 20,
+            "ants": -1,
+            "discipline": 2,
+            "planning": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 17,
+      "category": "gaming",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "🕹️",
+      "title": "Monedas virtuales",
+      "text": "Compraste monedas dentro de un juego.",
+      "options": [
+        {
+          "label": "Comprar muchas",
+          "effects": {
+            "money": -30,
+            "ants": 3,
+            "impulse": 2,
+            "emotionalSpending": 2
+          }
+        },
+        {
+          "label": "No gastar",
+          "effects": {
+            "money": 15,
+            "ants": -1,
+            "discipline": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 18,
+      "category": "social",
+      "rarity": "common",
+      "weight": 5,
+      "emoji": "🍿",
+      "title": "Cine con extras",
+      "text": "Gastaste más en snacks del cine que en la entrada.",
+      "options": [
+        {
+          "label": "Comprar combo gigante",
+          "effects": {
+            "money": -40,
+            "ants": 3,
+            "socialPressure": 2,
+            "impulse": 2
+          }
+        },
+        {
+          "label": "Comprar algo pequeño",
+          "effects": {
+            "money": -10,
+            "ants": 1,
+            "planning": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 19,
+      "category": "shopping",
+      "rarity": "rare",
+      "weight": 2,
+      "emoji": "⌚",
+      "title": "Reloj innecesario",
+      "text": "Viste un reloj que se veía increíble en redes.",
+      "options": [
+        {
+          "label": "Comprar por estética",
+          "effects": {
+            "money": -55,
+            "ants": 3,
+            "socialPressure": 2,
+            "emotionalSpending": 2
+          }
+        },
+        {
+          "label": "Ahorrar para algo mejor",
+          "effects": {
+            "money": 20,
+            "ants": -1,
+            "futureVision": 2,
+            "planning": 2
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 20,
+      "category": "coffee",
+      "rarity": "common",
+      "weight": 4,
+      "emoji": "🥤",
+      "title": "Bebidas caras",
+      "text": "Compraste bebidas costosas por costumbre.",
+      "options": [
+        {
+          "label": "Comprar siempre",
+          "effects": {
+            "money": -25,
+            "ants": 2,
+            "impulse": 2,
+            "discipline": -1
+          }
+        },
+        {
+          "label": "Llevar bebida",
+          "effects": {
+            "money": 20,
+            "ants": -1,
+            "planning": 2,
+            "futureVision": 1
+          }
+        }
+      ]
+    }
+
+  ]
+}
