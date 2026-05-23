@@ -14,8 +14,7 @@
     "planning"
   ],
 
-  "scenarios": ```json
-[
+  "scenarios": [
   {
     "id": 1,
     "category": "food",
